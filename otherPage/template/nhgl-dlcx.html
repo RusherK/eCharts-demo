@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>建筑节能系统</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- VENDOR CSS -->
+  <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../vendor/select/css/selectordie.css">
+  <link rel="stylesheet" href="../vendor/select/css/selectordie_theme.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+  <link rel="stylesheet" href="../css/demo.css">
+</head>
+
+<body>
+  <!-- WRAPPER -->
+  <div id="wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="brand">
+        <a href="index.html"><img src="../img/logo.png" alt="Logo" class="img-responsive logo"></a>
+      </div>
+      <div class="container-fluid">
+        <div class="navbar-btn">
+          <button type="button" class="btn-toggle-fullwidth"><i class="fa fa-outdent"></i></button><span>建筑能源管理系统</span>
+        </div>
+        <div class="navbar-middle navbar-left">
+          <i class="fa fa-calendar"></i>
+          <span>2017年7月11日 星期三</span>
+          <span>|</span>
+          <i class="fa fa-clock-o"></i>
+          <span>12:09:45</span>
+          <span>|</span>
+          <i class="fa fa-cloud"></i>
+          <span>北京 晴 20~30℃</span>
+        </div>
+        <div class="navbar-right">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-circle-o"></i> <span>admin某某，欢迎您</span> <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="help.html"> <i class="glyphicon glyphicon-question-sign"></i>帮助</a>
+                </li>
+                <li>
+                  <a href="password.html"> <i class="fa fa-pencil"></i>修改密码</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                <i class="fa fa-bell"></i>
+                                <span class="badge bg-danger">5</span>
+                            </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-power-off"></i><span>退出</span> <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="jikong.html"> <i class="fa fa-reply-all"></i>返回集控</a>
+                </li>
+                <li><a href="login.html"><i class="glyphicon glyphicon-log-out"></i>退出系统</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+      <div class="sidebar-scroll">
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html"><i class="fa fa-dashboard"></i> <span>负荷概况</span></a></li>
+            <li>
+              <a href="#subPages" class="active" data-toggle="collapse" class="collapsed"><i class="fa fa-battery-3"></i> <span>能耗管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+              <div id="subPages" class="collapse ">
+                <ul class="nav-submenu">
+                  <li class="active"><a href="nhgl-dlcx.html" class=""><i class="fa fa-search"></i>电力查询</a></li>
+                  <li><a href="nhgl-nhqs.html" class=""><i class="fa fa-area-chart"></i>能耗趋势</a></li>
+
+                </ul>
+              </div>
+            </li>
+            <li><a href="dljk.html"><i class="fa fa-bolt"></i> <span>电力监控</span></a></li>
+            <li><a href="wltpt.html"><i class="fa fa-globe"></i> <span>网络拓扑图</span></a></li>
+            <li><a href="bjgl.html"><i class="fa fa-bell-o"></i> <span>报警管理</span></a></li>
+            <li><a href="bbsc.html"><i class="fa fa-file-text"></i> <span>报表输出</span></a></li>
+            <li><a href="czjl.html"><i class="fa fa-pencil"></i> <span>操作记录</span></a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-nav-bottom">建筑节能系统</div>
+      </div>
+    </div>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <div>
+          <div class="build-crumb clearfix">
+            <ul>
+              <li><i class="fa fa-search"></i></li>
+              <li class="active">电力查询</li>
+            </ul>
+          </div>
+
+          <div class="right-main">
+            <div class="form-horizontal">
+
+              <div class="form-group ">
+                <div class="col-md-3">
+                  <div class="col-md-4 text-right ">
+                    <label class="control-label ">按支路选择</label>
+                  </div>
+                  <div class="col-md-8">
+                    <select class="select2_group form-control">
+                    <option >请选择支路A</option>
+                    <option >请选择支路B</option>
+                    <option >请选择支路C</option>
+                  </select>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <a class="btn btn-primary">查询</a>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="row clearfix">
+              <div class="col-md-4 mb10">
+                <div class="home-hdl">
+                  <div class="hdl-title hdl-title-rhdl">日耗电量</div>
+                  <div class="hdl-body">
+                    <div class="clearfix">
+                      <div class="col-md-7">
+                        <div class="col-md-5">
+                          <div>昨日耗电量</div>
+                          <div>32141.7</div>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="percentage mtb20">
+                            <div class="rhdl"></div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-5">
+                          <div>昨日耗电量</div>
+                          <div>32141.7</div>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="percentage mtb20">
+                            <div class="rhdl"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-md-5">
+                        <div id="rateCanvas1" class="rateCanvas1"></div>
+                        <div>
+                          <p>当日耗电量占昨日耗电量82%</p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb10">
+                <div class="home-hdl">
+                  <div class="hdl-title hdl-title-yhdl">月耗电量</div>
+                  <div class="hdl-body">
+                    <div class="clearfix">
+                      <div class="col-md-7">
+                        <div class="col-md-5">
+                          <div>昨日耗电量</div>
+                          <div>32141.7</div>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="percentage mtb20">
+                            <div class="yhdl"></div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-5">
+                          <div>昨日耗电量</div>
+                          <div>32141.7</div>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="percentage mtb20">
+                            <div class="yhdl"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-md-5">
+                        <div id="rateCanvas2" class="rateCanvas2"></div>
+                        <div>
+                          <p>当日耗电量占昨日耗电量82%</p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="home-hdl">
+                  <div class="hdl-title hdl-title-nhdl">年耗电量</div>
+                  <div class="hdl-body">
+                    <div class="clearfix">
+                      <div class="col-md-7">
+                        <div class="col-md-5">
+                          <div>昨日耗电量</div>
+                          <div>32141.7</div>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="percentage mtb20">
+                            <div class="nhdl"></div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-5">
+                          <div>昨日耗电量</div>
+                          <div>32141.7</div>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="percentage mtb20">
+                            <div class="nhdl"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-md-5">
+                        <div id="rateCanvas3" class="rateCanvas3"></div>
+                        <div>
+                          <p>当日耗电量占昨日耗电量82%</p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="building-border border-radius bg-blue p20 mtb20">
+              <div class="mb10 ">
+                <div class="panel-build">
+                  <div class="panel-build-title mb10">
+                    <span>报警记录列表</span>
+                  </div>
+                  <div class="panel-build-body">
+                    <div class="mb10">
+                      <a class="btn btn-primary">日</a>
+                      <a class="btn btn-primary">月</a>
+                      <a class="btn btn-primary">年</a>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-hover table-striped ">
+                        <thead>
+                          <tr>
+                            <th>设备</th>
+                            <th>01：00</th>
+                            <th>02：00</th>
+                            <th>03：00</th>
+                            <th>04：00</th>
+                            <th>05：00</th>
+                            <th>06：00</th>
+                            <th>07：00</th>
+                            <th>08：00</th>
+                            <th>09：00</th>
+
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+                          <tr>
+                            <td>001</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                          </tr>
+                          <tr>
+                            <td>001</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                          </tr>
+                          <tr>
+                            <td>001</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                          </tr>
+                          <tr>
+                            <td>001</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                          </tr>
+                          <tr>
+                            <td>001</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                          </tr>
+                          <tr>
+                            <td>001</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                          </tr>
+                          <tr>
+                            <td>001</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                            <td>B</td>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>R</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="text-center">
+                  <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row clearfix">
+              <div class="col-md-6 ">
+                <div class="home-hdl">
+                  <div class="hdl-title hdl-title-rhdl">能耗趋势</div>
+                  <div class="hdl-body">
+                    <div id="canvas3" class="canvas3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 ">
+                <div class="home-hdl">
+                  <div class="hdl-title hdl-title-yhdl">分项占比</div>
+                  <div class="hdl-body">
+                    <div id="canvas4" class="canvas4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+  </div>
+  <!-- END WRAPPER -->
+  <!-- Javascript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="../vendor/select/js/selectordie.min.js"></script>
+  <script src="../vendor/eCharts/echarts.min.js"></script>
+  <script>
+    $(function () {
+      $('select').selectOrDie();
+
+      var fakeData3 = {
+        'value': [1, 3, 5, 6, 7, 12, 20, 21, 18, 17, 10, 5],
+        'label': ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        'color': ['#45b6b0', '#45b6b0', '#45b6b0', '#45b6b0', '#45b6b0', '#ffa300', '#ff6b6b', '#ff6b6b', '#ffa300', '#ffa300', '#45b6b0', '#45b6b0']
+      }
+      var fakeData4 = {
+        'value': [5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        'label': ['车间1工艺用电', '车间2工艺用电', '车间3工艺用电', '2A区空调制水', '2B区动力', '2B物流库', '2c区空调制水', '车间5工艺用电', '车间6工艺用电', '车间7工艺用电'],
+        'color': ['#fdee6f', '#c7e47a', '#86ea87', '#67e5bf', '#7ce6e2', '#7cc1f8', '#7e8bf4', '#d473f8', '#f97cda', '#f679a5']
+      }
+
+      function canvas3() {
+        var myChart = echarts.init(document.getElementById('canvas3'));
+        var option = {
+          title: {
+            text: '',
+            subtext: '能耗(M)',
+            x: '10px',
+            subtextStyle: {
+              fontSize: 14,
+              color: '#666'
+            }
+          },
+          tooltip: {
+            trigger: 'axis',
+            padding: [10, 13, 10, 13],
+            formatter: function (params) {
+              return params[0].axisValueLabel + '<br>' + params[0].seriesName + ': ' + params[0].data.value + '(M)'
+            },
+            axisPointer: { // 坐标轴指示器，坐标轴触发有效
+              type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+            }
+          },
+          grid: {
+            left: '3%',
+            right: '8%',
+            bottom: '3%',
+            containLabel: true
+          },
+          xAxis: [{
+            type: 'category',
+            name: '月份',
+            data: fakeData3.label
+          }],
+          yAxis: [{
+            type: 'value',
+            splitLine: {
+              show: false
+            },
+          }],
+          series: [{
+            name: '月耗能',
+            type: 'bar',
+            barWidth: '20px',
+            data: (function () {
+              var dataOption = []
+              for (var i = 0; i < fakeData3.value.length; i++) {
+                dataOption.push({
+                  value: fakeData3.value[i],
+                  // name: fakeData3.label[i],
+                  itemStyle: {
+                    normal: {
+                      color: fakeData3.color ? fakeData3.color[i] : ''
+                    }
+                  }
+                })
+              }
+              return dataOption
+            }())
+          }]
+        };
+        myChart.setOption(option);
+      }
+
+      function canvas4() {
+        var myChart = echarts.init(document.getElementById('canvas4'));
+        var option = {
+          title: {
+            text: '分项占比示意图',
+            textStyle: {
+              fontSize: 14
+            },
+            x: 'center',
+            y: 'center'
+          },
+          tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+          },
+          legend: {
+            orient: 'vertical',
+            right: '10%',
+            top: 'middle',
+            padding: [0, 0],
+            data: fakeData4.label
+          },
+          series: [{
+            name: '分项占比',
+            type: 'pie',
+            radius: ['45%', '70%'],
+            center: ['50%', '50%'],
+            avoidLabelOverlap: false,
+            label: {
+              normal: {
+                show: false,
+                position: 'center'
+              },
+              emphasis: {
+                show: false,
+                // textStyle: {
+                //   fontSize: '18',
+                //   fontWeight: 'bold'
+                // }
+              }
+            },
+            labelLine: {
+              normal: {
+                show: false
+              }
+            },
+            data: (function () {
+              var dataOption = []
+              for (var i = 0; i < fakeData4.value.length; i++) {
+                dataOption.push({
+                  value: fakeData4.value[i],
+                  name: fakeData4.label[i],
+                  itemStyle: {
+                    normal: {
+                      color: fakeData4.color ? fakeData4.color[i] : ''
+                    }
+                  }
+                })
+              }
+              return dataOption
+            }())
+          }]
+        };
+        myChart.setOption(option);
+      }
+
+      function rateCanvas(opt) {
+        var myChart = echarts.init(document.getElementById(opt.domId));
+        var option = {
+          title: {
+            text: opt.val + '%',
+            textStyle: {
+              fontSize: 10,
+              fontWeight: 'normal'
+            },
+            x: 'center',
+            y: 'center'
+          },
+          toolbox: {
+            show: false
+          },
+          series: [
+            {
+              silent: true,
+              type: 'pie',
+              center: ['50%', '50%'],
+              radius: ['45%', '70%'],
+              itemGap: 10,
+              x: 'center',
+              y: 'center',
+              label: {
+                normal: {
+                  show: false,
+                },
+                emphasis: {
+                  show: false,
+                }
+              },
+              labelLine: {
+                show: false
+              },
+              data: [
+                {
+                  name: opt.val + '%', value: opt.val, itemStyle: {
+                    normal: {
+                      color: opt.color,
+                    },
+                  }
+                },
+                {
+                  name: '', value: (100 - opt.val), itemStyle: {
+                    normal: {
+                      color: '#d7d7d7',
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        };
+        myChart.setOption(option);
+      }
+
+      canvas3()
+      canvas4()
+      rateCanvas({
+        domId: 'rateCanvas1',
+        val: '82',
+        color: '#ff6b6b'
+      })
+      rateCanvas({
+        domId: 'rateCanvas2',
+        val: '82',
+        color: '#ffa200'
+      })
+      rateCanvas({
+        domId: 'rateCanvas3',
+        val: '22',
+        color: '#65c3df'
+      })
+    });
+  </script>
+  <script src="../scripts/main.js"></script>
+</body>
+
+</html>

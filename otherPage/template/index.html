@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>建筑节能系统</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- VENDOR CSS -->
+  <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../vendor/select/css/selectordie.css">
+  <link rel="stylesheet" href="../vendor/select/css/selectordie_theme.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+  <link rel="stylesheet" href="../css/demo.css">
+</head>
+
+<body>
+  <!-- WRAPPER -->
+  <div id="wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="brand">
+        <a href="index.html"><img src="../img/logo.png" alt="Logo" class="img-responsive logo"></a>
+      </div>
+      <div class="container-fluid">
+        <div class="navbar-btn">
+          <button type="button" class="btn-toggle-fullwidth"><i class="fa fa-outdent"></i></button><span>建筑能源管理系统</span>
+        </div>
+        <div class="navbar-middle navbar-left">
+          <i class="fa fa-calendar"></i>
+          <span>2017年7月11日 星期三</span>
+          <span>|</span>
+          <i class="fa fa-clock-o"></i>
+          <span>12:09:45</span>
+          <span>|</span>
+          <i class="fa fa-cloud"></i>
+          <span>北京 晴 20~30℃</span>
+        </div>
+        <div class="navbar-right">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-circle-o"></i> <span>admin某某，欢迎您</span> <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="help.html"> <i class="glyphicon glyphicon-question-sign"></i>帮助</a>
+                </li>
+                <li>
+                  <a href="password.html"> <i class="fa fa-pencil"></i>修改密码</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                <i class="fa fa-bell"></i>
+                                <span class="badge bg-danger">5</span>
+                            </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-power-off"></i><span>退出</span> <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="jikong.html"> <i class="fa fa-reply-all"></i>返回集控</a>
+                </li>
+                <li><a href="login.html"><i class="glyphicon glyphicon-log-out"></i>退出系统</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+      <div class="sidebar-scroll">
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html" class="active"><i class="fa fa-dashboard"></i> <span>负荷概况</span></a></li>
+            <li>
+              <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="fa fa-battery-3"></i> <span>能耗管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+              <div id="subPages" class="collapse ">
+                <ul class="nav-submenu">
+                  <li><a href="nhgl-dlcx.html" class=""><i class="fa fa-search"></i>电力查询</a></li>
+                  <li><a href="nhgl-nhqs.html" class=""><i class="fa fa-area-chart"></i>能耗趋势</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="dljk.html" class=""><i class="fa fa-bolt"></i> <span>电力监控</span></a></li>
+            <li><a href="wltpt.html" class=""><i class="fa fa-globe"></i> <span>网络拓扑图</span></a></li>
+            <li><a href="bjgl.html" class=""><i class="fa fa-bell-o"></i> <span>报警管理</span></a></li>
+            <li><a href="bbsc.html" class=""><i class="fa fa-file-text"></i> <span>报表输出</span></a></li>
+            <li><a href="czjl.html" class=""><i class="fa fa-pencil"></i> <span>操作记录</span></a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-nav-bottom">建筑节能系统</div>
+      </div>
+    </div>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <div>
+          <div class="build-crumb">
+            <ul>
+              <li><i class="fa fa-dashboard"></i></li>
+              <li class="active">负荷概况</li>
+            </ul>
+          </div>
+          <div class="right-main">
+            <div class="row mb20">
+              <div class="home-top clearfix ">
+                <div class="col-md-3 ">
+                  <div class="building-border border-radius bg-blue p20">
+
+                    <div class="panel-build">
+                      <div class="panel-build-title mb10">
+                        <span>建筑基本信息</span>
+                      </div>
+                      <div class="panel-build-body">
+                        <div class="home-jbxx-bg"></div>
+                        <div class="jianjie">
+                          <p class="mtb20">建筑简介：</p>
+                          <p class="text-justify">
+                            绍兴乔波国际会议中心，是建筑当前耗电量, 建筑当前耗电量 , 建筑当前耗电量, 建筑当前耗电量, 建筑当前耗电量, 建筑当前耗 电量, 建筑当前耗电量, 建筑当前耗电量, 建筑当前耗电量, 建筑当 前耗电量，建筑当前耗电等级
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="building-border border-radius bg-blue p20">
+
+                    <div class="panel-build">
+                      <div class="panel-build-title mb10">
+                        <span>耗电量</span>
+                      </div>
+                      <div class="panel-build-body row ">
+                        <div class="col-md-6 mb10">
+                          <div class="home-hdl">
+                            <div class="hdl-title hdl-title-rhdl">日耗电量</div>
+                            <div class="hdl-body">
+                              <p>当日耗电量占昨日耗电量82%</p>
+                              <div class="percentage mtb20">
+                                <div class="rhdl"></div>
+                              </div>
+                              <div class="clearfix">
+                                <div class="col-md-6">
+                                  <div>27501.7</div>
+                                  <div>当日耗电量</div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div>32141.7</div>
+                                  <div>昨日耗电量</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb10">
+                          <div class="home-hdl">
+                            <div class="hdl-title hdl-title-yhdl">月耗电量</div>
+                            <div class="hdl-body">
+                              <p>当月耗电量占上月耗电量72%</p>
+                              <div class="percentage mtb20">
+                                <div class="yhdl"></div>
+                              </div>
+                              <div class="clearfix">
+                                <div class="col-md-6">
+                                  <div>743462</div>
+                                  <div>当月耗电量</div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div>903121</div>
+                                  <div>上月耗电量</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="home-hdl">
+                            <div class="hdl-title hdl-title-nhdl">年耗电量</div>
+                            <div class="hdl-body">
+                              <p>今年耗电量占去年耗电量22%</p>
+                              <div class="percentage mtb20">
+                                <div class="nhdl"></div>
+                              </div>
+                              <div class="clearfix">
+                                <div class="col-md-6">
+                                  <div>1646580</div>
+                                  <div>今年耗电量</div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div>7287300</div>
+                                  <div>去年耗电量</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="home-hdl">
+                            <div class="hdl-title hdl-title-hdldj">耗电量等级</div>
+                            <div class="hdl-body mtb20">
+
+                              <div class="hdlde ">
+                                优
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="building-border border-radius bg-blue p20">
+
+                    <div class="panel-build">
+                      <div class="panel-build-title mb10">
+                        <span>报警概况</span>
+                      </div>
+                      <div class="panel-build-body">
+                        <div class="home-warning">
+                          <div id="canvas1" class="canvas1"></div>
+                        </div>
+                        <div class="mtb10">
+                          <div class="col-md-6">
+                            <div class="dcl">
+                              <div>待处理</div>
+                              <div class="ptb20 home-warning-icon1 "></div>
+                              <div class="mt10"><span class="text-left">未读(0)</span><span class="text-right">已读(0)</span></div>
+                            </div>
+
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="qr">
+                              <div>已确认</div>
+                              <div class="home-warning-icon2 "></div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row home-footer">
+              <div class="col-md-8">
+                <div class="building-border border-radius bg-blue p20 ">
+
+                  <div class="panel-build">
+                    <div class="panel-build-title mb10">
+                      <span>建筑相关指标</span>
+                    </div>
+                    <div class="panel-build-body">
+                      <div class="row">
+                        <div class="col-md-4 mb10">
+                          <div>
+                            <select class="form-control">
+															<option>总体能耗情况</option>
+															<option>总体能耗情况a</option>
+														</select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-striped">
+                          <thead>
+                            <tr>
+                              <th>建筑名称</th>
+                              <th>总能耗（单位）</th>
+                              <th>总电量（单位）</th>
+                              <th>总水耗量（单位）</th>
+                              <th>总燃气量（单位）</th>
+                              <th>总集中供热耗热量 （单位）</th>
+                              <th>总集中供冷耗冷量 （单位）</th>
+                              <th>其它能源应用量 （单位）</th>
+
+                            </tr>
+                          </thead>
+
+
+                          <tbody>
+                            <tr>
+                              <td>绍兴乔波国际 会议室</td>
+                              <td class="home-table-green">3516.31<span class="home-arrow-down"></span></td>
+                              <td class="home-table-red">6231.41<span class="home-arrow-up "></span></td>
+                              <td class="home-table-green">305.33<span class="home-arrow-down"></span></td>
+                              <td class="home-table-red">836.46<span class="home-arrow-up "></span></td>
+                              <td class="home-table-red">5103.52<span class="home-arrow-up "></span></td>
+                              <td class="home-table-green">2162.51<span class="home-arrow-down"></span></td>
+                              <td class="home-table-red">3965.63<span class="home-arrow-up "></span></td>
+                            </tr>
+                            <tr>
+                              <td>同类参考建筑</td>
+                              <td class="home-table-color">6240.52</td>
+                              <td class="home-table-color">4626.25</td>
+                              <td class="home-table-color">538.36</td>
+                              <td class="home-table-color">642.95</td>
+                              <td class="home-table-color">4682.42</td>
+                              <td class="home-table-color">2373.63</td>
+                              <td class="home-table-color">3612.72</td>
+                            </tr>
+
+
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-4 mb10">
+                          <select class="form-control">
+														<option>总体用电情况</option>
+														<option>总体用电情况b</option>
+													</select>
+                        </div>
+                      </div>
+
+                      <div class="table-responsive ">
+                        <table class="table table-bordered table-hover table-striped">
+                          <thead>
+                            <tr>
+                              <th>建筑名称</th>
+                              <th>总电量（单位）</th>
+                              <th>照明插座用电量（单位）</th>
+                              <th>空调用电量（单位）</th>
+                              <th>动力用电量（单位）</th>
+                              <th>特殊用电量 (单位）</th>
+
+                            </tr>
+                          </thead>
+
+
+                          <tbody>
+                            <tr>
+                              <td>绍兴乔波国际会议室</td>
+                              <td class=" home-table-red">6231.41<span class="home-arrow-up"></span></td>
+                              <td class=" home-table-green">3516.31<span class="home-arrow-down"></span></td>
+                              <td class=" home-table-green">836.46<span class="home-arrow-down"></span></td>
+                              <td class=" home-table-red">5103.52<span class="home-arrow-up"></span></td>
+                              <td class=" home-table-red">510.52<span class="home-arrow-up"></span></td>
+                            </tr>
+                            <tr>
+                              <td>同类参考建筑</td>
+                              <td class="home-table-color">4626.25</td>
+                              <td class="home-table-color">6240.52</td>
+                              <td class="home-table-color">538.36</td>
+                              <td class="home-table-color">642.95</td>
+                              <td class="home-table-color">4682.42</td>
+                            </tr>
+
+
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="building-border border-radius bg-blue p20">
+
+                  <div class="panel-build">
+                    <div class="panel-build-title mb10">
+                      <span>月度能耗柱状图</span><span style="color: #555; background: transparent">年度能耗柱状图</span>
+                    </div>
+                    <div class="panel-build-body " style="padding: 10px 0">
+                      <div class="home-nh">
+                        <div id="canvas2" class="canvas2"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+  </div>
+  <!-- END WRAPPER -->
+  <!-- Javascript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="../vendor/select/js/selectordie.min.js"></script>
+  <script src="../vendor/eCharts/echarts.min.js"></script>
+  <script>
+    $(function () {
+      $('select').selectOrDie();
+
+      var fakeData1 = [5, 20, 10];
+      var fakeData2 = {
+        'value': [1, 3, 5, 6, 7, 12, 20, 21, 18, 17, 10, 5],
+        'label': ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        'color': ['#45b6b0', '#45b6b0', '#45b6b0', '#45b6b0', '#45b6b0', '#ffa300', '#ff6b6b', '#ff6b6b', '#ffa300', '#ffa300', '#45b6b0', '#45b6b0']
+      }
+
+      function canvas1() {
+        var myChart = echarts.init(document.getElementById('canvas1'));
+        var option = {
+          title: {
+            text: '报警概况',
+            textStyle: {
+              fontSize: 14
+            },
+            x: 'center',
+            y: 'center'
+          },
+          tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} - ({d}%)"
+          },
+          series: [{
+            name: '报警概况',
+            type: 'pie',
+            radius: ['50%', '75%'],
+            data: [{
+              value: fakeData1[0],
+              name: '已读(' + fakeData1[0] + ')',
+              itemStyle: {
+                normal: {
+                  color: '#ffa200'
+                }
+              }
+            }, {
+              value: fakeData1[1],
+              name: '已确认(' + fakeData1[1] + ')',
+              itemStyle: {
+                normal: {
+                  color: '#44b5af'
+                }
+              }
+            }, {
+              value: fakeData1[2],
+              name: '未读(' + fakeData1[2] + ')',
+              itemStyle: {
+                normal: {
+                  color: '#ff6c6c'
+                }
+              }
+            }]
+          }]
+        };
+        myChart.setOption(option);
+      }
+
+      function canvas2() {
+        var myChart = echarts.init(document.getElementById('canvas2'));
+        var option = {
+          title: {
+            text: '',
+            subtext: '能耗(M)',
+            x: '10px',
+            subtextStyle: {
+              fontSize: 12,
+              color: '#666'
+            }
+          },
+          tooltip: {
+            trigger: 'axis',
+            padding: [10, 13, 10, 13],
+            formatter: function (params) {
+              return params[0].axisValueLabel + '<br>' + params[0].seriesName + ': ' + params[0].data.value + '(M)'
+            },
+            axisPointer: { // 坐标轴指示器，坐标轴触发有效
+              type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+            }
+          },
+          grid: {
+            left: '3%',
+            right: '8%',
+            bottom: '3%',
+            // width : '1034px',
+            containLabel: true
+          },
+          xAxis: [{
+            name: '月份',
+            type: 'category',
+            data: fakeData2.label
+          }],
+          yAxis: [{
+            type: 'value',
+            splitLine: {
+              show: false
+            },
+          }],
+          series: [{
+            name: '月耗能',
+            type: 'bar',
+            barWidth: '10px',
+            // itemStyle: {
+            //     emphasis: {
+            //         color: '#65c3df'
+            //     }
+            // },
+            data: (function () {
+              var dataOption = []
+              for (var i = 0; i < fakeData2.value.length; i++) {
+                dataOption.push({
+                  value: fakeData2.value[i],
+                  // name: fakeData2.label[i],
+                  itemStyle: {
+                    normal: {
+                      color: fakeData2.color ? fakeData2.color[i] : ''
+                    }
+                  }
+                })
+              }
+              return dataOption
+            }())
+          }]
+        };
+        myChart.setOption(option);
+      }
+
+      canvas1()
+      canvas2()
+    });
+  </script>
+  <script src="../scripts/main.js"></script>
+
+</body>
+
+</html>

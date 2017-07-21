@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>建筑节能系统</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- VENDOR CSS -->
+  <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../vendor/select/css/selectordie.css">
+  <link rel="stylesheet" href="../vendor/select/css/selectordie_theme.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+  <link rel="stylesheet" href="../css/demo.css">
+</head>
+
+<body class="jikong-bg">
+  <!-- WRAPPER -->
+  <div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top jikong-header clearfix">
+      <div class="brand">
+        <a href="index.html"><img src="../img/logo.png" alt="Logo" class="img-responsive logo"></a>
+      </div>
+      <div class="container-fluid">
+        <div class="navbar-middle navbar-left">
+          <i class="fa fa-calendar"></i>
+          <span>2017年7月11日 星期三</span>
+          <span>|</span>
+          <i class="fa fa-clock-o"></i>
+          <span>12:09:45</span>
+        </div>
+        <div class="navbar-right">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-circle-o"></i> <span>admin某某，欢迎您</span> <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="help.html"> <i class="glyphicon glyphicon-question-sign"></i>帮助</a></li>
+                <li><a href="password.html"> <i class="fa fa-pencil"></i>修改密码</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+              <i class="fa fa-bell"></i>
+              <span class="badge bg-danger">5</span>
+            </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-power-off"></i><span>退出</span> <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="jikong.html"> <i class="fa fa-reply-all"></i>返回集控</a></li>
+                <li><a href="login.html"><i class="glyphicon glyphicon-log-out"></i>退出系统</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- MAIN -->
+    <div class="jikong-main clearfix">
+      <div class="col-md-4">
+        <div class="jikong-panel-title">数据汇总</div>
+        <div class="jikong-panel-body ">
+          <div class="jikong-search clearfix">
+            <div class="col-md-4 ">
+              <select class="form-control">
+                <option>时间粒度&nbsp;&nbsp;日</option>
+                <option>年</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select class="form-control">
+                <option>选择日期</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select class="form-control">
+                <option>从高到低</option>
+                <option>从低到高</option>
+              </select>
+            </div>
+          </div>
+          <div class="jikong-btn clearfix mtb20">
+            <a class="btn btn-zm">照明插座用电</a>
+            <a class="btn btn-kt">空调用电</a>
+            <a class="btn btn-dl">动力用电</a>
+            <a class="btn btn-ts">特殊用电</a>
+            <a class="btn btn-sh">水耗量</a>
+            <a class="btn btn-rq">燃气量</a>
+            <a class="btn btn-jzgr">集中供热耗热量</a>
+            <a class="btn btn-jzgl">集中供冷耗冷量</a>
+            <a class="btn btn-qt">其它能源应用量</a>
+          </div>
+          <div class="jikong-table jikong-sjhz">
+            <div class="table-responsive">
+              <table class="table  ">
+                <thead>
+                  <tr>
+                    <th>建筑名称</th>
+                    <th>计划能耗</th>
+                    <th>实际能耗 单位：电-KWh</th>
+                    <th>排名</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>绍兴乔波国际 会议中心</td>
+                    <td>2111</td>
+                    <td>2111<span class="jikong-table-nh"></span></td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <td>绍兴乔波国际 会议中心</td>
+                    <td>2111</td>
+                    <td>2111<span class="jikong-table-nh"></span></td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <td>绍兴乔波国际 会议中心</td>
+                    <td>2111</td>
+                    <td>2111<span class="jikong-table-nh"></span></td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <td>绍兴乔波国际 会议中心</td>
+                    <td>2111</td>
+                    <td>2111<span class="jikong-table-nh"></span></td>
+                    <td>32</td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="text-center">
+                <ul class="pagination">
+                  <li><a href="#">&laquo;</a></li>
+                  <li><a href="#">1</a></li>
+                  <li class="active"><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">&raquo;</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="jikong-panel-title">能耗分布</div>
+        <div class="jikong-panel-body ptb10">
+          <div class="jikong-tab">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active">
+                <a href="#a" data-toggle="tab">集团</a>
+              </li>
+              <li><a href="#b" data-toggle="tab">行政区域</a></li>
+              <li><a href="#c" data-toggle="tab">建筑类型</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="a">
+                <div class="jikong-search clearfix">
+                  <div class="col-md-6 ">
+                    <select class="form-control">
+                    <option>时间粒度&nbsp;&nbsp;日</option>
+                    <option>年</option>
+                  </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select class="form-control">
+                    <option>选择日期</option>
+                  </select>
+                  </div>
+                </div>
+                <div id="canvas10" class="canvas10"></div>
+              </div>
+              <div class="tab-pane fade" id="b">
+                <div class="jikong-search clearfix">
+                  <div class="col-md-6 ">
+                    <select class="form-control">
+                    <option>时间粒度&nbsp;&nbsp;日</option>
+                    <option>年</option>
+                  </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select class="form-control">
+                    <option>选择日期</option>
+                  </select>
+                  </div>
+                </div>
+                <div>图二</div>
+              </div>
+              <div class="tab-pane fade" id="c">
+                <div class="jikong-search clearfix">
+                  <div class="col-md-6 ">
+                    <select class="form-control">
+                    <option>时间粒度&nbsp;&nbsp;日</option>
+                    <option>年</option>
+                  </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select class="form-control">
+                    <option>选择日期</option>
+                  </select>
+                  </div>
+                </div>
+                <div>图三</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="canvas9" class="canvas9"></div>
+        <div class="jikong-panel-body clearfix mtb20">
+          <div class="map-list">
+            <div class="col-md-3 ">
+              <div class="map-list-con">
+                <div class="map-list-title">总项目个数（个）</div>
+                <div class="map-list-body">548</div>
+              </div>
+            </div>
+            <div class="col-md-3 ">
+              <div class="map-list-con">
+                <div class="map-list-title">总建筑面积（m2）</div>
+                <div class="map-list-body">7432</div>
+              </div>
+            </div>
+            <div class="col-md-3 ">
+              <div class="map-list-con">
+                <div class="map-list-title">累计耗电量（度）</div>
+                <div class="map-list-body">51723</div>
+              </div>
+            </div>
+            <div class="col-md-3 ">
+              <div class="map-list-con">
+                <div class="map-list-title">总功率（kW）</div>
+                <div class="map-list-body">6526</div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div class="jikong-panel-title">用能情况与相关指标</div>
+        <div class="jikong-panel-body">
+          <div class="jikong-search clearfix">
+            <div class="col-md-6 ">
+              <select class="form-control">
+              <option>时间粒度&nbsp;&nbsp;日</option>
+              <option>年</option>
+            </select>
+            </div>
+            <div class="col-md-6">
+              <select class="form-control">
+              <option>选择日期</option>
+            </select>
+            </div>
+          </div>
+
+          <div class="table-responsive mtb10 map-table">
+            <table class="table table-bordered ">
+              <thead>
+                <tr>
+                  <th>建筑类型</th>
+                  <th colspan="2">🕘酒店</th>
+                  <th colspan="2">办公</th>
+                  <th colspan="2">医院</th>
+                  <th colspan="2">商场</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>总能耗（单位）<span class="map-color-red">+</span></td>
+                  <td colspan="2">4320.43</td>
+                  <td colspan="2">9572.73</td>
+                  <td colspan="2">1463.67</td>
+                  <td colspan="2">9525.37</td>
+                </tr>
+                <tr>
+                  <td>平均能耗（单位）<span class="map-color-red">+</span></td>
+                  <td colspan="2">4320.43</td>
+                  <td colspan="2">9572.73</td>
+                  <td colspan="2">1463.67</td>
+                  <td colspan="2">9525.37</td>
+                </tr>
+
+                <tr>
+                  <td rowspan="2">单位建筑面积能耗（单位）<span class="map-color-red">+</span></td>
+                  <td><span class="map-color-green">3920</span></td>
+                  <td><span class="map-color-red">7302</span></td>
+                  <td><span class="map-color-green">3920</span></td>
+                  <td><span class="map-color-red">7302</span></td>
+                  <td><span class="map-color-green">3920</span></td>
+                  <td><span class="map-color-red">7302</span></td>
+                  <td><span class="map-color-green">3920</span></td>
+                  <td><span class="map-color-red">7302</span></td>
+                </tr>
+                <tr>
+                  <td><span class="map-color-yellow">4210</span></td>
+                  <td><span class="map-color-young">2052</span></td>
+                  <td><span class="map-color-yellow">4210</span></td>
+                  <td><span class="map-color-young">2052</span></td>
+                  <td><span class="map-color-yellow">4210</span></td>
+                  <td><span class="map-color-young">2052</span></td>
+                  <td><span class="map-color-yellow">4210</span></td>
+                  <td><span class="map-color-young">2052</span></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">单位空调面积能耗（单位）<span class="map-color-red">+</span></td>
+                  <td><span class="map-color-green">3920</span></td>
+                  <td><span class="map-color-red">7302</span></td>
+                  <td><span class="map-color-green">3920</span></td>
+                  <td><span class="map-color-red">7302</span></td>
+                  <td><span class="map-color-green">3920</span></td>
+                  <td><span class="map-color-red">7302</span></td>
+                  <td><span class="map-color-green">3920</span></td>
+                  <td><span class="map-color-red">7302</span></td>
+                </tr>
+                <tr>
+                  <td><span class="map-color-yellow">4210</span></td>
+                  <td><span class="map-color-young">2052</span></td>
+                  <td><span class="map-color-yellow">4210</span></td>
+                  <td><span class="map-color-young">2052</span></td>
+                  <td><span class="map-color-yellow">4210</span></td>
+                  <td><span class="map-color-young">2052</span></td>
+                  <td><span class="map-color-yellow">4210</span></td>
+                  <td><span class="map-color-young">2052</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="map-eg">
+            <span class="map-eg-bgz"></span><span class="bgz">标杆值</span>
+            <span class="zmap-eg-zdz"></span><span class="zdz">最大值</span>
+            <span class="map-eg-pjz"></span><span class="pjz">平均值</span>
+            <span class="map-eg-zxz"></span><span class="zxz">最小值</span>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+      <div class="col-md-4">
+        <div class="jikong-panel-title">能耗变化趋势</div>
+        <div class="jikong-panel-body">
+          <div class="jikong-search clearfix">
+            <div class="col-md-12">
+              <select class="form-control">
+              <option>最近12个月</option>
+              <option>年</option>
+            </select>
+            </div>
+          </div>
+
+
+          <div class="mtb20">
+            <div id="canvas11" class="canvas11"></div>
+          </div>
+
+        </div>
+
+
+        <div class="jikong-panel-title">耗能对比</div>
+        <div class="jikong-panel-body">
+          <div class="jikong-tab">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#tb" data-toggle="tab">
+              月（同比、环比）</a>
+              </li>
+              <li><a href="#hb" data-toggle="tab">年（环比）</a></li>
+
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="tb">
+
+                <div id="canvas12" class="canvas12"></div>
+              </div>
+              <div class="tab-pane fade" id="hb">
+                环比图
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- END MAIN -->
+  </div>
+  <!-- END WRAPPER -->
+  <!-- Javascript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="../vendor/select/js/selectordie.min.js"></script>
+  <script src="../vendor/eCharts/echarts.min.js"></script>
+  <script src="../vendor/eCharts/china.js"></script>
+  <script>
+    $(function () {
+      $('select').selectOrDie();
+    });
+
+    var fakeData4 = {
+      'value': [5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+      'label': ['车间1工艺用电', '车间2工艺用电', '车间3工艺用电', '2A区空调制水', '2B区动力', '2B物流库', '2c区空调制水', '车间5工艺用电', '车间6工艺用电', '车间7工艺用电'],
+      'color': ['#fdee6f', '#c7e47a', '#86ea87', '#67e5bf', '#7ce6e2', '#7cc1f8', '#7e8bf4', '#d473f8', '#f97cda', '#f679a5']
+    }
+
+    var fakeData11 = {
+      'label': ['酒店', '办公', '医院', '商场'],
+      'color': ['#56cdef', '#5691ef', '#7356f0', '#c756f0'],
+      'value': [[1, 2, 3, 3, 2, 1, 2, 1, 3, 1, 2, 3], [4, 5, 6, 6, 5, 4, 5, 4, 5, 6, 6, 4], [8, 9, 10, 8, 9, 10, 8, 9, 9, 10, 8, 8], [12, 15, 16, 13, 18, 14, 15, 12, 13, 10, 12, 15]],
+      'xAxis': ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+      'barWidth': '20px',
+      'stack': '用点电'
+    }
+    var fakeData11Option = chartOneData(fakeData11)
+
+    var fakeData12 = {
+      'label': ['去年', '今年', '同比', '环比'],
+      'color': ['#56cdef', '#dfad34', '#c756f0', '#44d12a'],
+      'value': [[1, 2, 3, 3, 2, 1], [4, 5, 6, 6, 5, 4], [8, 9, 10, 8, 9, 10], [12, 15, 16, 13, 18, 14]],
+      'xAxis': ['1月', '2月', '3月', '4月', '5月', '6月'],
+      'barWidth': '20px',
+      'stack': '用点电'
+    }
+    var fakeData12Option = chartOneData(fakeData12)
+
+    function chartOneData(data) {
+      var dataOption = []
+      for (var i = 0; i < data.value.length; i++) {
+        dataOption.push(
+          {
+            data: data.value[i],
+            name: data.label[i],
+            barWidth: data.barWidth,
+            type: 'bar',
+            stack: data.stack,
+            itemStyle: {
+              normal: {
+                color: data.color[i]
+              }
+            }
+          }
+        )
+      }
+      return dataOption
+    }
+    function randomData() {
+      return Math.round(Math.random() * 1000);
+    }
+    function canvas9() {
+      var myChart = echarts.init(document.getElementById('canvas9'));
+      var option = {
+        tooltip: {
+          padding: [10, 13, 10, 13],
+          formatter: function (params) {
+            return params.name + '<br>' + params.seriesName + ': ' + params.value + '个'
+          },
+        },
+        series: [{
+          name: '项目',
+          type: 'map',
+          mapType: 'china',
+          barWidth: '30px',
+          itemStyle: {
+            normal: {
+              label: { show: false },
+              areaColor: '#56cdef'
+            },
+            emphasis: {
+              label: { show: true },
+              areaColor: '#628ee7'
+            }
+          },
+          label: {
+            normal: {
+              show: false,
+            },
+            emphasis: {
+              show: false,
+            }
+          },
+          data: [
+            { name: '北京', value: randomData() },
+            { name: '天津', value: randomData() },
+            { name: '上海', value: randomData() },
+            { name: '重庆', value: randomData() },
+            { name: '河北', value: randomData() },
+            { name: '河南', value: randomData() },
+            { name: '云南', value: randomData() },
+            { name: '辽宁', value: randomData() },
+            { name: '黑龙江', value: randomData() },
+            { name: '湖南', value: randomData() },
+            { name: '安徽', value: randomData() },
+            { name: '山东', value: randomData() },
+            { name: '新疆', value: randomData() },
+            { name: '江苏', value: randomData() },
+            { name: '浙江', value: randomData() },
+            { name: '江西', value: randomData() },
+            { name: '湖北', value: randomData() },
+            { name: '广西', value: randomData() },
+            { name: '甘肃', value: randomData() },
+            { name: '山西', value: randomData() },
+            { name: '内蒙古', value: randomData() },
+            { name: '陕西', value: randomData() },
+            { name: '吉林', value: randomData() },
+            { name: '福建', value: randomData() },
+            { name: '贵州', value: randomData() },
+            { name: '广东', value: randomData() },
+            { name: '青海', value: randomData() },
+            { name: '西藏', value: randomData() },
+            { name: '四川', value: randomData() },
+            { name: '宁夏', value: randomData() },
+            { name: '海南', value: randomData() },
+            { name: '台湾', value: randomData() },
+            { name: '香港', value: randomData() },
+            { name: '澳门', value: randomData() }
+          ]
+        }]
+      };
+      myChart.setOption(option);
+    }
+
+    function canvas10() {
+      var myChart = echarts.init(document.getElementById('canvas10'));
+      var option = {
+        title: {
+          text: '能耗分布',
+          textStyle: {
+            fontSize: 16,
+            color: '#fff'
+          },
+          x: 'center',
+          y: 'center'
+        },
+        tooltip: {
+          trigger: 'item',
+          formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        legend: {
+          // orient : 'vertical',
+          // right: '10%',
+          // top: 'middle',
+          // padding: [0 , 0],
+          // data : fakeData4.label
+        },
+        series: [{
+          name: '分项占比',
+          type: 'pie',
+          radius: ['45%', '70%'],
+          center: ['50%', '50%'],
+          avoidLabelOverlap: false,
+          label: {
+            normal: {
+              show: false,
+              position: 'center'
+            },
+            emphasis: {
+              show: false,
+              textStyle: {
+                fontSize: '18',
+                fontWeight: 'bold'
+              }
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
+            }
+          },
+          data: (function () {
+            var dataOption = []
+            for (var i = 0; i < fakeData4.value.length; i++) {
+              dataOption.push(
+                {
+                  value: fakeData4.value[i],
+                  name: fakeData4.label[i],
+                  itemStyle: {
+                    normal: {
+                      color: fakeData4.color ? fakeData4.color[i] : ''
+                    }
+                  }
+                }
+              )
+            }
+            return dataOption
+          }())
+        }]
+      };
+      myChart.setOption(option);
+    }
+
+    function canvas11() {
+      var myChart = echarts.init(document.getElementById('canvas11'));
+      var option = {
+        title: {
+          text: '',
+          subtext: '单位：(对应单位)',
+          x: '10px',
+          subtextStyle: {
+            fontSize: 14,
+            color: '#fff'
+          }
+        },
+        tooltip: {
+          trigger: 'axis',
+          padding: [10, 13, 10, 13],
+          formatter: function (params) {
+            return params[0].axisValueLabel + '<br>' +
+              params[0].seriesName + ': ' + params[0].data + '<br>' +
+              params[1].seriesName + ': ' + params[1].data + '<br>' +
+              params[2].seriesName + ': ' + params[2].data + '<br>' +
+              params[3].seriesName + ': ' + params[3].data
+          },
+          axisPointer: { // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+          }
+        },
+        legend: {
+          right: '30px',
+          top: '20px',
+          textStyle: {
+            color: '#fff'
+          },
+          padding: [0, 0],
+          data: fakeData11.label
+        },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis: [{
+          type: 'category',
+          nameGap: '10px',
+          axisLabel: {
+            textStyle: {
+              color: '#fff'
+            }
+          },
+          axisLine: {
+            lineStyle: {
+              color: '#56cdef'
+            }
+          },
+          data: fakeData11.xAxis
+        }],
+        yAxis: [{
+          type: 'value',
+          splitLine: {
+            show: false,
+            lineStyle: {
+              color: '#56cdef'
+            }
+          },
+          axisLabel: {
+            textStyle: {
+              color: '#fff'
+            }
+          },
+          axisLine: {
+            lineStyle: {
+              color: '#56cdef'
+            }
+          },
+        }],
+        series: fakeData11Option
+      };
+      myChart.setOption(option);
+    }
+
+    function canvas12() {
+      var myChart = echarts.init(document.getElementById('canvas12'));
+      var option = {
+        title: {
+          text: '',
+          subtext: '单位：(对应单位)',
+          x: '10px',
+          subtextStyle: {
+            fontSize: 14,
+            color: '#fff'
+          }
+        },
+        tooltip: {
+          trigger: 'axis',
+          padding: [10, 13, 10, 13],
+          formatter: function (params) {
+            return params[0].axisValueLabel + '<br>' +
+              params[0].seriesName + ': ' + params[0].data + '<br>' +
+              params[1].seriesName + ': ' + params[1].data + '<br>' +
+              params[2].seriesName + ': ' + params[2].data + '<br>' +
+              params[3].seriesName + ': ' + params[3].data
+          },
+          axisPointer: { // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+          }
+        },
+        legend: {
+          right: '30px',
+          top: '20px',
+          padding: [0, 0],
+          textStyle: {
+            color: '#fff'
+          },
+          data: fakeData12.label
+        },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        dataZoom: {
+          show: false,
+          start: 0,
+          end: 100
+        },
+        xAxis: [{
+          type: 'category',
+          nameGap: '10px',
+          nameTextStyle: {
+            color: '#fff'
+          },
+          axisLabel: {
+            textStyle: {
+              color: '#fff'
+            }
+          },
+          axisLine: {
+            lineStyle: {
+              color: '#56cdef'
+            }
+          },
+          data: fakeData12.xAxis
+        }, {
+          //隐藏第二条x轴
+          show: false,
+          type: 'category',
+          nameGap: '10px',
+          data: fakeData12.xAxis
+        }],
+        yAxis: [{
+          type: 'value',
+          max: 30,
+          min: 0,
+          axisLabel: {
+            textStyle: {
+              color: '#fff'
+            }
+          },
+          axisLine: {
+            lineStyle: {
+              color: '#56cdef'
+            }
+          },
+        }, {
+          type: 'value',
+          max: 1200,
+          min: 0,
+          splitLine: {
+            lineStyle: {
+              color: '#294962'
+            }
+          },
+          axisLabel: {
+            textStyle: {
+              color: '#fff'
+            }
+          },
+          axisLine: {
+            lineStyle: {
+              color: '#56cdef'
+            }
+          },
+        }],
+        series: [
+          {
+            name: fakeData12.label[0],
+            type: 'bar',
+            barGap: 0,
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            barWidth: '20px',
+            itemStyle: {
+              normal: {
+                color: fakeData12.color[0]
+              }
+            },
+            data: (function () {
+              var res = [];
+              var len = 6;
+              while (len--) {
+                res.push(Math.round(Math.random() * 1000));
+              }
+              return res;
+            })()
+          },
+          {
+            name: fakeData12.label[1],
+            type: 'bar',
+            barGap: 0,
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            barWidth: '20px',
+            itemStyle: {
+              normal: {
+                color: fakeData12.color[1]
+              }
+            },
+            data: (function () {
+              var res = [];
+              var len = 6;
+              while (len--) {
+                res.push(Math.round(Math.random() * 1000));
+              }
+              return res;
+            })()
+          },
+          {
+            name: fakeData12.label[2],
+            type: 'line',
+            itemStyle: {
+              normal: {
+                color: fakeData12.color[2]
+              }
+            },
+            data: (function () {
+              var res = [];
+              var len = 0;
+              while (len < 6) {
+                res.push((Math.random() * 10 + 5).toFixed(1) - 0);
+                len++;
+              }
+              return res;
+            })()
+          },
+          {
+            name: fakeData12.label[3],
+            type: 'line',
+            itemStyle: {
+              normal: {
+                color: fakeData12.color[3]
+              }
+            },
+            data: (function () {
+              var res = [];
+              var len = 0;
+              while (len < 6) {
+                res.push((Math.random() * 10 + 5).toFixed(1) - 0);
+                len++;
+              }
+              return res;
+            })()
+          }
+        ]
+      };
+      myChart.setOption(option);
+    }
+
+    canvas9()
+    canvas10()
+    canvas11()
+    canvas12()
+
+  </script>
+  <script src="../scripts/main.js"></script>
+</body>
+
+</html>

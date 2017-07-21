@@ -1,0 +1,107 @@
+@charset "utf-8"; 
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-family: '微软雅黑', 'MicrosoftYaHei','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #ececec;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+ul, li{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+i, h1, h2, h3, h4, h5, h6, b, table, caption, tbody, tfoot, thead, tr, th, td{
+	margin: 0;
+    font-style: normal;
+    font-weight: normal;
+}
+
+img{
+	border: 0px none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+input, select {
+    vertical-align:middle;
+    outline: none;
+}
+
+
+.chartBox{
+    width: 1550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.topTitle{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0;
+}
+.chartBox .chartRow{
+    width: 760px;
+    background: #fff;
+    margin-top: 20px;
+}
+.chartBox .subTitle{
+    font-size: 18px;
+    color: #222;
+    border-bottom: 1px solid #EDEDED;
+    line-height: 50px;
+    text-indent: 25px;
+    margin: 0;
+}
+.chartBox .blackBj{
+    background: url(../images/jikong.jpg) center;
+}
+.chartBox .canvas1{
+    width: 480px;
+    height: 200px;
+}
+.chartBox .canvas2{
+    width: 480px;
+    height: 330px;
+}
+.chartBox .canvas3{
+    width: 760px;
+    height: 360px;
+}
+.chartBox .canvas4{
+    width: 760px;
+    height: 360px;
+}
+.chartBox .canvas5, .chartBox .canvas6, .chartBox .canvas7, .chartBox .canvas8{
+    width: 760px;
+    height: 390px;
+}
+.canvas9{
+    width: 760px;
+    height: 470px;
+}
+.canvas10{
+    width: 230px;
+    height: 230px;
+}
+.canvas11{
+    width: 760px;
+    height: 350px;
+}
+.canvas12{
+    width: 760px;
+    height: 350px;
+}
+.rateCanvas1, .rateCanvas2, .rateCanvas3{
+    width: 80px;
+    height: 80px;
+}
+
